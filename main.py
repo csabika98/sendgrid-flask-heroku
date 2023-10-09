@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def mail():
     if request.method == "POST":
-        sg = sendgrid.SendGridAPIClient(apikey=SENDGRID_API_KEY)
+        sg = sendgrid.SendGridAPIClient(apikey="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")
         from_email = "6ix9inegotti@naver.com"
         to_email = "sallcsa.csaba8@gmail.com"
         subject = "Test"
